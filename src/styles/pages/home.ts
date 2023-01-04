@@ -44,15 +44,23 @@ export const Product = styled(Link, {
     opacity: 0,
     transition: 'all 0.2s ease-in-out',
 
-    strong: {
-      fontSize: '$lg',
-      color: '$gray100',
-    },
+    div: {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'left',
+      justifyContent: 'space-between',
+      gap: 3,
 
-    span: {
-      fontSize: '$xl',
-      fontWeight: 'bold',
-      color: '$green300',
+      strong: {
+        fontSize: '$lg',
+        color: '$gray100',
+      },
+
+      span: {
+        fontSize: '$xl',
+        fontWeight: 'bold',
+        color: '$green300',
+      },
     },
   },
 
@@ -62,4 +70,10 @@ export const Product = styled(Link, {
       opacity: 1,
     },
   },
+})
+
+export const Icon = styled('div', {
+  backgroundColor: '#00875F',
+  borderRadius: 6,
+  padding: 8,
 })
